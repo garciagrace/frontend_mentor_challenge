@@ -1,0 +1,51 @@
+.container {
+  width: calc(min(85vw, 90rem));
+
+  &-narrow {
+    width: calc(min(85vw, 50rem));
+  }
+
+  &,
+  &-narrow {
+    margin-inline: auto;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  width: 85vw;
+  color: #fff;
+  padding: 0.875rem 0;
+  border-radius: 3rem;
+  transition: all ease-out 0.3s;
+
+  &-group {
+    flex-direction: column;
+    gap: 0.875rem;
+
+    @media screen and (min-width: 50rem) {
+      flex-direction: row;
+    }
+  }
+
+  &-cyan {
+    background-color: var(--clr-primary-100);
+    border-bottom: 3px solid #2f9580;
+
+    &:hover {
+      background-color: hsl(171, 52%, 58%);
+    }
+  }
+
+  &-blue {
+    background-color: var(--clr-primary-300);
+    border-bottom: 3px solid #5262dc;
+
+    &:hover {
+      background-color: hsl(233, 100%, 77%);
+    }
+  }
+}

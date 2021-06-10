@@ -1,0 +1,61 @@
+@media screen and (min-width: 50rem) {
+  .btn {
+    width: 15rem;
+  }
+
+  .features {
+    flex-direction: row;
+    text-align: left;
+    gap: 5rem;
+
+    & > img {
+      width: 75%;
+      margin-left: -20%;
+    }
+
+    &-content {
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+    }
+  }
+
+  .workflow {
+    &-content {
+      flex-direction: row;
+    }
+
+    &-details {
+      width: 33%;
+    }
+  }
+
+  .logos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer {
+    padding: 1rem 0;
+
+    &-logo {
+      width: 5vw;
+    }
+
+    &-nav {
+      width: 75vw;
+      height: 4rem;
+      justify-content: start;
+    }
+
+    &-content {
+      flex-direction: row;
+      text-align: left;
+      gap: 5rem;
+    }
+
+    .social-media {
+      width: 20vw;
+    }
+  }
+}
