@@ -1,0 +1,120 @@
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-header: 'Lobster', cursive;
+  --clr-primary-100: #0f3443;
+  --clr-primary-300: #11ffbd;
+  --clr-dark-100: #16222a;
+  --clr-dark-400: #232526;
+}
+
+body {
+  font-family: var(--ff-primary);
+  color: #fff;
+  background-color: var(--clr-dark-100);
+}
+
+h1 {
+  font-family: var(--ff-header);
+  font-size: 5.5rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90vw;
+  margin-inline: auto;
+}
+
+main {
+  min-height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 4rem;
+}
+
+.card {
+  height: 25rem;
+  background-color: var(--clr-dark-400);
+  border-bottom: solid 8px var(--clr-primary-100);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-title {
+  min-height: 6vh;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-btn {
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 0.5rem 0;
+  border-radius: 2rem;
+  border: 4px solid var(--clr-primary-100);
+  -webkit-transition: all 280ms ease-out;
+  transition: all 280ms ease-out;
+}
+
+.card-btn:hover {
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 1px;
+  background-color: var(--clr-primary-300);
+  border-color: var(--clr-primary-300);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+footer > a {
+  font-weight: 700;
+  color: var(--clr-primary-300);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+footer > a:hover {
+  color: #24fe41;
+}
