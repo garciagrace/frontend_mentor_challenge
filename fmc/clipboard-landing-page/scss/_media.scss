@@ -3,6 +3,10 @@
     width: 15rem;
   }
 
+  header {
+    background: url(../images/bg-header-desktop.png) no-repeat top/cover;
+  }
+
   .features {
     flex-direction: row;
     text-align: left;

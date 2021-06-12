@@ -320,6 +320,9 @@ section {
   .btn {
     width: 15rem;
   }
+  header {
+    background: url(../images/bg-header-desktop.png) no-repeat top/cover;
+  }
   .features {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
