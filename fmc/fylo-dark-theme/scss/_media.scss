@@ -1,0 +1,48 @@
+@media screen and (min-width: 80rem) {
+  .hero {
+    background: var(--clr-primary-100) url(../images/bg-curvy-desktop.svg)
+      no-repeat bottom/contain;
+
+    &-content {
+      margin-bottom: 12rem;
+    }
+  }
+
+  .early-access input[type='email'] {
+    height: 2.5rem;
+    width: 70%;
+    margin: auto 0;
+  }
+
+  .cta-access {
+    margin-top: 0;
+    width: 30%;
+  }
+  .form-access {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer {
+    &-wrapper {
+      flex-direction: row;
+    }
+
+    &-details {
+      width: 40%;
+    }
+
+    &-nav {
+      width: 40%;
+      grid-area: navigation;
+      flex-direction: row;
+      gap: 6rem;
+      padding: 0 5rem;
+    }
+
+    .social-media {
+      width: 20%;
+      grid-area: social-media;
+    }
+  }
+}

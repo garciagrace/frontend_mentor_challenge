@@ -1,0 +1,43 @@
+.content-wrapper {
+  width: calc(min(85vw, 90rem));
+  margin-inline: auto;
+
+  &-narrow {
+    width: calc(min(85vw, 50rem));
+    margin-inline: auto;
+  }
+
+  &-group {
+    & > * + * {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cta {
+  font-family: var(--ff-accent);
+  font-weight: 700;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--clr-accent-100),
+    var(--clr-accent-200)
+  );
+  border-radius: 3rem;
+  transition: all ease-out 0.2s;
+
+  &:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--clr-accent-200),
+      var(--clr-accent-100)
+    );
+  }
+}
