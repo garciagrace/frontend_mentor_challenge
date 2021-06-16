@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-200);
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.625rem, calc(5vw), 2.8rem);
+  color: #fff;
+}
+
+h2 {
+  font-size: clamp(2rem, calc(5vw), 2.4rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, calc(3vw), 1.8rem);
+}
+
+p {
+  color: var(--clr-gray-100);
+  line-height: 1.5;
+}
+
+body {
+  font-family: var(--ff-100);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #000;
+}
